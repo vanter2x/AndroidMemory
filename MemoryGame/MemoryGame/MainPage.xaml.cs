@@ -1,11 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Android.Icu.Text;
-using Java.Awt.Font;
 using MemoryGame.Game;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -45,7 +41,6 @@ namespace MemoryGame
         {
             await Task.Delay(msec);
         }
-
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
@@ -96,7 +91,6 @@ namespace MemoryGame
                 buttons.ForEach(x => x.IsEnabled = true);
                 buttons.ForEach(x => x.Click = false);
                 BlockAllButtons(false);
-
             }
         }
 
