@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MemoryGame"
+             xmlns:game="clr-namespace:MemoryGame.Game"
+             x:Class="MemoryGame.MainPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stLayout" Orientation="Horizontal" HorizontalOptions="Center">
+            <Grid x:Name="GridButtons" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <game:GButton Grid.Row="0" Grid.Column="0" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="0" Grid.Column="1" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="0" Grid.Column="2" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="1" Grid.Column="0" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="1" Grid.Column="1" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="1" Grid.Column="2" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="2" Grid.Column="0" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="2" Grid.Column="1" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="2" Grid.Column="2" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="3" Grid.Column="0" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="3" Grid.Column="1" Text="1" Clicked="Button_OnClicked"/>
+                <game:GButton Grid.Row="3" Grid.Column="2" Text="1" Clicked="Button_OnClicked"/>
+            </Grid>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
