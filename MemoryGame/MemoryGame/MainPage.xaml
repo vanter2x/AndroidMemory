@@ -32,10 +32,6 @@
                 <game:GButton Grid.Row="3" Grid.Column="1" Text="1" Clicked="Button_OnClicked"/>
                 <game:GButton Grid.Row="3" Grid.Column="2" Text="1" Clicked="Button_OnClicked"/>
             </Grid>
-
-
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
