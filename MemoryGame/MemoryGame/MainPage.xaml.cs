@@ -27,13 +27,13 @@ namespace MemoryGame
 
             foreach (var item in GridButtons.Children)
             {
-                var bt = item as GButton;
+                var btn = item as GButton;
                 var rnd = new Random().Next(0, list.Count);
                 var btNr = list[rnd] > 6 ? list[rnd] - 6 : list[rnd];
                 list.RemoveAt(rnd);
-                bt.Click = false;
-                bt.CommandParameter = btNr;
-                bt.Text ="";
+                btn.Click = false;
+                btn.CommandParameter = btNr;
+                btn.Text ="";
             }
         }
 
@@ -102,6 +102,10 @@ namespace MemoryGame
             return gButtons;
         }
 
+        /// <summary>
+        ///     Block or unblock all buttons
+        /// </summary>
+        /// <param name="blocked"></param>
         private void BlockAllButtons(bool blocked)
         {
             if(blocked == true)
